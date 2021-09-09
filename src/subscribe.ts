@@ -31,10 +31,10 @@ async function createSubscription(evt: Event) {
 
     if (data.id) {
         document.querySelector("#status").innerHTML =
-            `<div class='alert alert-success w-25 mt-5 mx-auto' role='alert'>You are suscribed with subscription ${data.id}</div>`
+            `<div class='alert alert-success mt-5' role='alert'>You are suscribed with subscription ${data.id}</div>`
     } else {
         document.querySelector("#status").innerHTML =
-            `<div class='alert alert-danger  w-25 mt-5 mx-auto' role='alert'>There was a problem</div>`
+            `<div class='alert alert-danger  mt-5' role='alert'>There was a problem</div>`
     }
 
     setTimeout(() => { document.querySelector("#status").innerHTML = '' }, 5000)
