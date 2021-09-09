@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>My Page!</h1>
+        <div id="main"></div>
+        <div class="card w-50 mx-auto bg-warning">
+            <div class="card-body text-center">
+                <h4 class="card-title ">Register with our newletter</h4>
+                <p class="card-text">Enter your email to get our monthly newletter.</p>
+                <form >
+                    <div class="form-floating mb-3">
+                        <input type="text" 
+                               class="form-control" 
+                               id="txtName" 
+                               name="txtName"
+                               placeholder="Name" />
+                        <label for="txtName">Name</label>
+                    </div>
+                    <div class="form-floating">
+                        <input type="email" 
+                               class="form-control" 
+                               id="txtEmail" 
+                               name="txtEmail"
+                               aria-describedby="emailHelp"
+                               placeholder="Email Address" />
+                        <label for="txtEmail">Email Address</label>
+                    </div>
+                    <div id="emailHelp" class="form-text text-start mb-3 "> 
+                        We'll never share your email with anyone else.
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-lg " id="subscribe" >Register</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="bundle.js"></script>
+</body>
+
+</html>
