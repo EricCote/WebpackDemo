@@ -3,7 +3,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 
 
 module.exports = {
-  entry: "./src/index.js",
+  entry: "./src/index.ts",
 
   output: {
     path: path.resolve(__dirname, "dist"),
@@ -11,6 +11,11 @@ module.exports = {
   },
   module: {
     rules: [
+      {
+        test: /\.tsx?$/,
+        use: 'ts-loader',
+        exclude: /node_modules/,
+      },
       {
         test: /\.css$/,
         use: [
@@ -20,6 +25,9 @@ module.exports = {
         ],
       },
     ],
+ }, 
+  resolve: {
+    extensions: ['.tsx', '.ts', '.js'],
   },
   // Optional for webpack-dev-server
   devServer: {
@@ -28,6 +36,6 @@ module.exports = {
     open: true,
   },
   plugins: [
-    new MiniCssExtractPlugin({filename: 'app.css'}),
+    new MiniCssExtractPlugin({ filename: 'app.css' }),
   ]
 }
