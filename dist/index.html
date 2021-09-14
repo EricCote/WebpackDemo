@@ -1,48 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="app.css">
-</head>
+    <link rel="stylesheet" href="app.css" />
+  </head>
 
-<body>
-    <div class="container bg-info">
-        <h1>My Page!</h1>
-        <div id="main"></div>
-        <div class="row justify-content-md-center">
-            <div class=" col col-md-6">
-                <div class="card bg-warning">
-                    <div class="card-body text-center">
-                        <h4 class="card-title ">Register with our newletter</h4>
-                        <p class="card-text">Enter your email to get our monthly newletter.</p>
-                        <form>
-                            <div class="form-floating mb-3">
-                                <input type="text" class="form-control" id="txtName" name="txtName"
-                                    placeholder="Name" />
-                                <label for="txtName">Name</label>
-                            </div>
-                            <div class="form-floating">
-                                <input type="email" class="form-control" id="txtEmail" name="txtEmail"
-                                    aria-describedby="emailHelp" placeholder="Email Address" />
-                                <label for="txtEmail">Email Address</label>
-                            </div>
-                            <div id="emailHelp" class="form-text text-start mb-3 ">
-                                We'll never share your email with anyone else.
-                            </div>
-
-                            <button type="submit" class="btn btn-primary btn-lg " id="subscribe">Register</button>
-                        </form>
-                    </div>
-                </div>
+  <body>
+    <div class="max-w-screen-lg xl:max-w-screen-xl mx-auto">
+      <h1
+        class="
+          text-4xl
+          sm:text-6xl
+          lg:text-7xl
+          tracking-wide
+          leading-none
+          font-thin
+          text-center text-gray-900
+          mt-2
+          mb-4
+          sm:mt-6 sm:mb-10
+        "
+      >
+        Welcome to Tailwind
+      </h1>
+      <div id="main"></div>
+      <!-- <div class1="row justify-content-md-center">
+        <div class1="col col-md-6"> -->
+      <div class="md:mx-auto md:w-6/12 m-6">
+        Link to
+        <a class="underline text-blue-400" href="/bootstrap.html"
+          >Bootstrap version</a
+        >.
+      </div>
+      <div
+        class="
+          bg-yellow-400
+          rounded-lg
+          p-4
+          mx-5
+          md:mx-auto md:w-6/12
+          border-yellow-900 border
+        "
+      >
+        <div class="text-center">
+          <h4 class="text-2xl font-semibold">Register with our newletter</h4>
+          <p class="my-3">Enter your email to get our monthly newletter.</p>
+          <form>
+            <div class="relative text-left">
+              <input
+                type="text"
+                class="
+                  w-full
+                  p-3
+                  pt-6
+                  pb-1
+                  mb-5
+                  border-gray-400 border
+                  focus:outline-none focus:shadow-xl
+                  rounded
+                  peer
+                  placeholder-transparent
+                "
+                id="txtName"
+                name="txtName"
+                placeholder="Name"
+              />
+              <label
+                for="txtName"
+                class="
+                  absolute
+                  top-1
+                  left-3
+                  text-gray-400 text-sm
+                  transition-all
+                  peer-placeholder-shown:text-base peer-placeholder-shown:top-3
+                  peer-focus:text-sm peer-focus:top-1
+                "
+                >Name</label
+              >
             </div>
+            <div class="relative">
+              <input
+                type="email"
+                class="
+                  w-full
+                  p-3
+                  pt-6
+                  pb-1
+                  mb-1
+                  border-gray-400 border
+                  rounded
+                  peer
+                  placeholder-transparent
+                  focus:outline-none focus:shadow-xl
+                "
+                id="txtEmail"
+                name="txtEmail"
+                aria-describedby="emailHelp"
+                placeholder="Email Address"
+              />
+              <label
+                for="txtEmail"
+                class="
+                  absolute
+                  top-1
+                  left-3
+                  text-gray-400 text-sm
+                  transition-all
+                  peer-placeholder-shown:text-base peer-placeholder-shown:top-3
+                  peer-focus:text-sm peer-focus:top-1
+                "
+                >Email Address</label
+              >
+            </div>
+            <div id="emailHelp" class="text-left text-sm text-gray-500">
+              We'll never share your email with anyone else.
+            </div>
+
+            <button
+              type="submit"
+              class="
+                h-12
+                w-24
+                my-4
+                text-lg text-white
+                rounded-md
+                items-center
+                justify-center
+                bg-blue-500
+                mx-auto
+              "
+              id="subscribe"
+            >
+              Register
+            </button>
+          </form>
         </div>
-        <div class="row  justify-content-md-center">
-            <div id="status" class="col col-md-5"></div>
-        </div>
+      </div>
+      <div
+        class="
+          hidden
+          bg-red-200
+          border-red-400
+          text-red-800
+          bg-green-200
+          border border-green-400
+          text-green-800
+          px-4
+          py-3
+          rounded
+          relative
+        "
+      ></div>
+      <div id="status" class="md:mx-auto md:w-6/12 m-6"></div>
     </div>
     <script src="bundle.js"></script>
-</body>
-
+  </body>
 </html>

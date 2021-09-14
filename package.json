@@ -12,9 +12,13 @@
   "author": "Eric Cote <eric@coteexpert.com>",
   "license": "ISC",
   "dependencies": {
+    "autoprefixer": "^10.3.4",
     "bootstrap": "^5.1.1",
     "css-loader": "^6.2.0",
     "mini-css-extract-plugin": "^2.2.2",
+    "postcss": "^8.3.6",
+    "postcss-loader": "^6.1.1",
+    "tailwindcss": "^2.2.14",
     "webpack": "^5.52.0",
     "webpack-cli": "^4.8.0",
     "webpack-dev-server": "^4.1.1"

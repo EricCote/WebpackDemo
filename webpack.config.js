@@ -1,6 +1,5 @@
-const path = require("path")
-const MiniCssExtractPlugin = require("mini-css-extract-plugin")
-
+const path = require("path");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
   entry: "./src/index.ts",
@@ -13,29 +12,23 @@ module.exports = {
     rules: [
       {
         test: /\.tsx?$/,
-        use: 'ts-loader',
+        use: "ts-loader",
         exclude: /node_modules/,
       },
       {
         test: /\.css$/,
-        use: [
-          MiniCssExtractPlugin.loader,
-          "css-loader",
-          // "postcss-loader",
-        ],
+        use: [MiniCssExtractPlugin.loader, "css-loader", "postcss-loader"],
       },
     ],
- }, 
+  },
   resolve: {
-    extensions: ['.tsx', '.ts', '.js'],
+    extensions: [".tsx", ".ts", ".js"],
   },
   // Optional for webpack-dev-server
   devServer: {
-    watchFiles: ['src/**/*', 'dist/**/*'],
+    watchFiles: ["src/**/*", "dist/**/*"],
     static: path.resolve(__dirname, "dist"),
     open: true,
   },
-  plugins: [
-    new MiniCssExtractPlugin({ filename: 'app.css' }),
-  ]
-}
+  plugins: [new MiniCssExtractPlugin({ filename: "app.css" })],
+};
